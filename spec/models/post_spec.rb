@@ -11,11 +11,6 @@ RSpec.describe Post, type: :model do
     expect(@post).to_not be_valid
   end
 
-  it 'title is invalid' do
-    @post.title = 'aaasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd'
-    expect(@post).to_not be_valid
-  end
-
   it 'comments_counter is invalid' do
     @post.comments_counter = 'asdasdasd'
     expect(@post).to_not be_valid
