@@ -1,9 +1,9 @@
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe Like, type: :model do
   before(:example) do
-    @user = User.create(name: "John Doe", photo: "live to photo", bio: "live to bio", posts_counter: 0)
-    @post = Post.create(title: "title", text: "content", author: @user, comments_counter: 0, likes_counter: 0)
+    @user = User.create(name: 'John Doe', photo: 'live to photo', bio: 'live to bio', posts_counter: 0)
+    @post = Post.create(title: 'title', text: 'content', author: @user, comments_counter: 0, likes_counter: 0)
     @like = Like.create(post: @post, author: @user)
   end
 
