@@ -147,6 +147,7 @@ footer {
   padding: 0.5rem;
   margin-bottom: 1rem;
   align-items: flex-start;
+  gap: 1rem;
 }
 
 .post-detail-bdy {
@@ -175,4 +176,8 @@ footer {
 .post-text {
   font-size: 0.8rem;
   text-align: justify;
+}
+
+.comment {
+  width: 100%;
 }
