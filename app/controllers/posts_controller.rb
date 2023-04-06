@@ -9,7 +9,6 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @comments = @post.comments
     @likes = @post.likes
-    
   end
 
   def new
@@ -24,7 +23,7 @@ class PostsController < ApplicationController
     if @post.save
       @post.update_post_counter
       flash[:notice] = 'Your post was created successfully'
-      redirect_to user_post_path(@user,@post)
+      redirect_to user_post_path(@user, @post)
     else
       flash.alert = 'sorry, something went wrong!'
       render :new
