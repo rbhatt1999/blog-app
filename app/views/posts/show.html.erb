@@ -18,3 +18,7 @@
     <% end %>
   </ul>
 </section>
+
+<button class="see-all-post d-flex border">
+    <%= link_to "Create new comment", new_user_post_comment_path(@user, @post) %>
+</button>
