@@ -10,6 +10,11 @@
     <p class="post-text"> <%= flash[:notice] %> </p>
     <h1 class="post-text"> <%= @post.title %> </h1>
     <p class="post-text color"> <%= @post.text %> </p>
+    <div>
+      <%= form_with model: @like, url:  user_post_likes_path(@user, @post) do |form|%>
+          <%= form.submit 'Like post', class: 'submit' %>
+        <%end%>
+    </div>
 
   <ul class="comment d-flex-2 border">
     Comments:
