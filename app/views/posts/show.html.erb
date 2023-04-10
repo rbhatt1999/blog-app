@@ -18,8 +18,8 @@
 
   <ul class="comment d-flex-2 border">
     Comments:
-    <% @comments.each do |comment| %>
-      <li class="user-bio_div d-flex-2"><%= @user.name %>: <%= comment.text %></li>
+    <% @comments.includes(:author).each do |comment| %>
+      <li class="user-bio_div d-flex-2"><%= comment.author.name %>: <%= comment.text %></li>
     <% end %>
   </ul>
 </section>
