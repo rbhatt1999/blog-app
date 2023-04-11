@@ -4,7 +4,6 @@ body {
 
 header {
   width: 100%;
-  padding: 1.5rem;
 }
 
 header nav ul li a {
@@ -13,6 +12,12 @@ header nav ul li a {
 
 header nav ul li a span.logo {
   font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .d-flex {
@@ -134,6 +139,9 @@ footer {
   filter: grayscale(100%) contrast(30%);
   color: #fff;
 }
+ul {
+  padding-left: 0;
+}
 
 .fs-sm {
   font-size: 1rem;
@@ -141,6 +149,7 @@ footer {
 
 .mb-section {
   margin-bottom: 4rem;
+  width: 100%;
 }
 
 .post-detail {
