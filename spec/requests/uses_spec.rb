@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe '/users', type: :request do
   describe 'GET /index' do
     before(:example) do
-      get '/users'
+      @user = User.create(name: 'John Doe', photo: 'live to photo', bio: 'live to bio')
+      get users_path
     end
     it 'renders a successful response' do
       expect(response).to be_successful
@@ -12,13 +13,15 @@ RSpec.describe '/users', type: :request do
       expect(response).to render_template(:index)
     end
     it 'contain the placeholder text' do
-      expect(response.body).to include('All the users')
+      expect(response.body).to include('John Doe')
     end
   end
 
   describe 'GET /show' do
     before(:example) do
-      get '/users/1'
+      @user = User.create(name: 'John Doe', photo: 'live to photo', bio: 'live to bio')
+      @post = Post.create(title: 'title', text: 'content', author: @user)
+      get user_path(@user)
     end
     it 'renders a successful response' do
       expect(response).to be_successful
@@ -27,7 +30,7 @@ RSpec.describe '/users', type: :request do
       expect(response).to render_template(:show)
     end
     it 'contain the placeholder text' do
-      expect(response.body).to include('Selected the users')
+      expect(response.body).to include('content')
     end
   end
 end
