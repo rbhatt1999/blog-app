@@ -79,6 +79,7 @@ main {
   font-size: 0.8rem;
   color: #999;
   padding: 0.5rem;
+  justify-content: space-between;
 }
 
 .user-bio_div h3,
@@ -190,4 +191,13 @@ ul {
 
 .comment {
   width: 100%;
+}
+
+.delete-button {
+  border: 2px solid #999;
+  border-radius: 999rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #fa0000;
 }
