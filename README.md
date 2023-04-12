@@ -119,8 +119,12 @@ Run tests with:
 👤 **Rohit Bhatt**
 
 - GitHub: [@rbhatt1999](https://github.com/rbhatt1999)
-- Twitter: [@Rohit*Bhatt*](https://twitter.com/Rohit_Bhatt_)
+- Twitter: [@RohitBhatt](https://twitter.com/Rohit_Bhatt_)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rohitbhatt-dev/)
+
+👤 **Hassaan Baig**
+- GitHub: [@Hassaanjbaig-code](https://github.com/Hassaanjbaig-code)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hassaan-baig-855788241/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
