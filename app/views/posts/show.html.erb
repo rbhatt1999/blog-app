@@ -15,15 +15,19 @@
           <%= form.submit 'Like post', class: 'submit' %>
         <%end%>
     </div>
-
   <ul class="comment d-flex-2 border">
     Comments:
     <% @comments.includes(:author).each do |comment| %>
-      <li class="user-bio_div d-flex-2"><%= comment.author.name %>: <%= comment.text %></li>
+      <li style="align-items:center;" class="user-bio_div d-flex"><%= comment.author.name %>: <%= comment.text %>
+      <% if can? :destroy, comment %>
+                <%= form_with url: user_post_comment_path(@user, @post, comment), method: :delete, data: { confirm: 'Are you sure?' } do %>
+                  <button class="delete-button">Delete</button>
+                <% end %>
+      <% end %>
     <% end %>
+      </li>
   </ul>
 </section>
-
 <button class="see-all-post d-flex border">
     <%= link_to "Create new comment", new_user_post_comment_path(@user, @post) %>
 </button>
