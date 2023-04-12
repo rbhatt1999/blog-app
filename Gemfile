@@ -54,6 +54,7 @@ group :development, :test do
   gem 'devise'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'cancancan'
 end
 
 group :development do
