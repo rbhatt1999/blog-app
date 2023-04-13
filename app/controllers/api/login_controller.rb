@@ -12,7 +12,7 @@ class Api::LoginController < Api::ApplicationController
       token = JWT.encode payload, Rails.application.secrets.secret_key_base, 'HS256'
       render json: { token: }
     else
-      render json: { name: 'Fail' }
+      render json: { name: 'wrong email or password' }
     end
   end
 end
