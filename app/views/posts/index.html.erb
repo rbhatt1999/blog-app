@@ -19,12 +19,17 @@
           <h3>Post #<%= index + 1 %></h3>
           <h3><%= post.title %></h3>
           <p><%= post.text%></p>
+          <% end %>
           <div class="sp_div d-flex">
             <span class="comments  mr-sm">Comments: <%= post.comments_counter || 0 %>, </span>
             <span class="likes">Likes: <%= post.likes_counter || 0 %></span>
           </div>
         </div>
-      <% end %>
+        <% if can? :destroy, post %>
+            <%= form_with url: user_post_path(@user, post), method: :delete do %>
+              <button class="see-all-post d-flex border">Delete</button>
+            <% end %>
+          <% end %>
 
       <ul class="comments user-comment d-flex-2">
         Comments:
@@ -36,5 +41,4 @@
       </ul>
     <% end %>
   </div>
-
 </section>
