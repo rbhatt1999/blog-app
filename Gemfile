@@ -55,6 +55,10 @@ group :development, :test do
   gem 'devise'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  # Use Json Web Token (JWT) for token based authentication
+  gem 'jwt'
+  # Use ActiveModel has_secure_password
+  gem 'bcrypt', '~> 3.1.7'
 end
 
 group :development do
