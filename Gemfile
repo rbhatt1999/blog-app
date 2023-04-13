@@ -57,7 +57,7 @@ group :development, :test do
   gem 'rspec-rails'
   # Use Json Web Token (JWT) for token based authentication
   gem 'jwt'
-# Use ActiveModel has_secure_password
+  # Use ActiveModel has_secure_password
   gem 'bcrypt', '~> 3.1.7'
 end
 

@@ -12,14 +12,14 @@ class Api::CommentsController < Api::ApplicationController
       render json: { status: 'Failure', error: 'Post Not Found' }
     end
   end
-  
+
   def create
     @comment = Comment.new(comment_params)
     @comment.author = @auth_user
     @comment.post = @post
 
     if @comment.save
-      render json: {status: 'Success', comment: @comment}
+      render json: { status: 'Success', comment: @comment }
     else
       render json: { status: 'Failure', error: 'Comment Not Created' }
     end

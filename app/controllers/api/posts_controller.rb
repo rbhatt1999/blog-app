@@ -9,7 +9,9 @@ class Api::PostsController < Api::ApplicationController
       render json: { status: 'Failure', error: 'Post Not Found' }
     end
   end
+
   private
+
   def find_user
     @user = User.find(params[:user_id])
   end
