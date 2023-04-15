@@ -59,6 +59,7 @@ group :development, :test do
   gem 'jwt'
   # Use ActiveModel has_secure_password
   gem 'bcrypt', '~> 3.1.7'
+  gem 'rswag'
 end
 
 group :development do
