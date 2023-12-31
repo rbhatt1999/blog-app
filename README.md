@@ -1,9 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <img src="https://github.com/rbhatt1999/rbhatt1999/blob/bd8bb27a9814ab74d6f920a1027494a65610a24d/logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Blog App</b></h3>
 </div>
 
@@ -121,10 +118,6 @@ Run tests with:
 - GitHub: [@rbhatt1999](https://github.com/rbhatt1999)
 - Twitter: [@RohitBhatt](https://twitter.com/Rohit_Bhatt_)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rohitbhatt-dev/)
-
-👤 **Hassaan Baig**
-- GitHub: [@Hassaanjbaig-code](https://github.com/Hassaanjbaig-code)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hassaan-baig-855788241/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
